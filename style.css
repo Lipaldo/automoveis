@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #0a0a1f, #000);
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(90deg, #004e92, #000428);
+  box-shadow: 0 0 20px #000;
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #ddd;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.rede-info, .train-section, .result-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.rede-info:hover, .train-section:hover, .result-section:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  color: #00bcd4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rede-diagrama {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.layer {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(145deg, #14142b, #0b0b1b);
+  border: 2px solid #00bcd4;
+  box-shadow: 0 0 15px rgba(0,188,212,0.6);
+  transition: transform 0.3s;
+}
+
+.layer:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0,188,212,1);
+}
+
+#train-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 12px;
+  background: #00bcd4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#train-btn:hover {
+  background: #008c9e;
+  transform: scale(1.03);
+}
+
+#train-status {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+canvas {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.result-section {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000428;
+  color: #aaa;
+  font-size: 0.9em;
+}
+

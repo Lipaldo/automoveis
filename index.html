@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predição de Preços - Rede Neural com TensorFlow.js</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.18.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🚗 Predição de Preços de Automóveis</h1>
+    <p>Simulação de uma Rede Neural em JavaScript com TensorFlow.js</p>
+  </header>
+
+  <main>
+    <section class="rede-info">
+      <h2>🧠 Estrutura da Rede Neural</h2>
+      <div class="rede-diagrama">
+        <div class="layer input-layer">Camada de Entrada<br><small>(316 neurônios)</small></div>
+        <div class="layer hidden-layer">Camada Oculta 1<br><small>(158 neurônios)</small></div>
+        <div class="layer hidden-layer">Camada Oculta 2<br><small>(158 neurônios)</small></div>
+        <div class="layer output-layer">Camada de Saída<br><small>(1 neurônio)</small></div>
+      </div>
+    </section>
+
+    <section class="train-section">
+      <h2>⚙️ Treinamento da Rede</h2>
+      <button id="train-btn">Treinar Rede Neural</button>
+      <div id="train-status">Aguardando início...</div>
+      <canvas id="chart" width="600" height="300"></canvas>
+    </section>
+
+    <section class="result-section">
+      <h2>📊 Resultados</h2>
+      <div id="resultados">
+        <p><b>Erro Médio Absoluto (MAE):</b> <span id="mae">--</span></p>
+        <p><b>Tempo de Treinamento:</b> <span id="tempo">--</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido com ❤️ usando HTML, CSS, JavaScript e TensorFlow.js</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
