@@ -1,7 +1,4 @@
 # automoveis
-Aqui está um **README profissional e pronto para colocar no GitHub**, baseado exatamente no que você descreveu — organizado, claro e bonito:
-
----
 
 # 🚗 Predição de Preços de Automóveis com TensorFlow.js
 
